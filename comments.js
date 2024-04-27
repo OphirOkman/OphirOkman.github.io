@@ -9,4 +9,3 @@
 // 1. You can always go back to the code before the latest changes were made
 // 2. Each software engineer work in his local environment without the need of a server
 
-// Fix the bug!
