@@ -4,20 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <script src="comments.js"></script>
     <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <!-- this is the part of the code i added -->
-    <h1>This is my first git project:</h1>
-
-    <!-- another team member add the line later -->
-    <h2>this is a bug fix</h2>
-    
-
-    <a href="//https:www.walla.co.il">Walla</a>
-
-    <button>Click Me!</button>
-    
-  </body>
+    <script defer src="comments.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Single Page Application</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#" onclick="navigateTo('home')">Home</a></li>
+            <li><a href="#" onclick="navigateTo('about')">About</a></li>
+            <li><a href="#" onclick="navigateTo('contact')">Contact</a></li>
+        </ul>
+    </nav>
+    <section id="content">
+        <!-- Content will be dynamically loaded here -->
+    </section>
 </html>

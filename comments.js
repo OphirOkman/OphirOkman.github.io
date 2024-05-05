@@ -1,11 +1,17 @@
-// this is an example of using git in the work flow:
+// Function to navigate between sections
+function navigateTo(sectionName) {
+  var content = document.getElementById("content");
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function () {
+    if (this.readyState == 4 && this.status == 200) {
+      content.innerHTML = this.responseText;
+    }
+  };
+  xhttp.open("GET", sectionName + ".html", true);
+  xhttp.send();
+}
 
-// 1. I write one part of the code
-// 2. another developer add his part
-// 3. we merge our work together
-
-//Problems that git solves:
-
-// 1. You can always go back to the code before the latest changes were made
-// 2. Each software engineer work in his local environment without the need of a server
-
+// Load default content on page load
+window.onload = function () {
+  navigateTo("home");
+};
